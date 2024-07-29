@@ -1,5 +1,7 @@
-# programcion-con-esp32
+# programacion-con-esp32
 se presentara un codigo para controlar la temperatura y que lea esta mediante el celuras y se mueva un servomotor 
+
+
 #include <WiFi.h>
 #include <WebServer.h>
 #include <DHT.h>
@@ -55,6 +57,7 @@ void handleRoot() {
   }
 
   // Enviar datos al cliente
+  
   String html = "<html><body><h1>Termometro Digital</h1>";
   html += "<p>Temperatura: " + String(temperature) + " °C</p>";
   html += "</body></html>";
